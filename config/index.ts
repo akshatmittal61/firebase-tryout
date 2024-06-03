@@ -48,3 +48,19 @@ const configService = new ConfigService(process.env);
 export default configService;
 
 export const PORT = configService.safeGet(() => getNumber("PORT"), 8000);
+
+export type FIREBASE_CONFIG =
+	| "apiKey"
+	| "authDomain"
+	| "projectId"
+	| "storageBucket"
+	| "messagingSenderId"
+	| "appId";
+export const firebaseConfig: Record<FIREBASE_CONFIG, string> = {
+	apiKey: configService.get("FIREBASE_API_KEY"),
+	authDomain: configService.get("FIREBASE_AUTH_DOMAIN"),
+	projectId: configService.get("FIREBASE_PROJECT_ID"),
+	storageBucket: configService.get("FIREBASE_STORAGE_BUCKET"),
+	messagingSenderId: configService.get("FIREBASE_MESSAGING_SENDER_ID"),
+	appId: configService.get("FIREBASE_APP_ID"),
+};
