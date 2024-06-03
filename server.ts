@@ -1,6 +1,5 @@
 import express from "express";
 import { PORT } from "./config";
-import { db } from "./db";
 import log from "./log";
 import routes from "./routes";
 
@@ -16,6 +15,5 @@ app.get("/api/health", (_, res) => {
 app.use("/api/v1", routes);
 
 app.listen(PORT, () => {
-	db.connect();
 	log.info(`Server is listening at http://localhost:${PORT}`);
 });
