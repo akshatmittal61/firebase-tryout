@@ -1,0 +1,23 @@
+@import "../../styles/config/mixins";
+
+.error {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 36px;
+	// background-image: url("/images/lost.png");
+	background-size: contain;
+	background-position-x: right;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	padding: 0 5%;
+
+	@include responsive(phone) {
+		background-image: none;
+		align-items: center;
+		text-align: center;
+	}
+}

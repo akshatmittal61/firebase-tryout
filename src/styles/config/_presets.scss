@@ -1,0 +1,38 @@
+$states: ("error", "success", "warning");
+
+:root,
+:root::before,
+:root::after {
+	--color-error-50: #fff0f1;
+	--color-error-100: #ffdbde;
+	--color-error-200: #ffbdc2;
+	--color-error-300: #ff99a2;
+	--color-error-400: #ff7a86;
+	--color-error-500: #ff505f;
+	--color-error-600: #eb0014;
+	--color-error-700: #c70011;
+	--color-error-800: #94000d;
+	--color-error-900: #570007;
+
+	--color-success-50: #e9fbf0;
+	--color-success-100: #c6f6d9;
+	--color-success-200: #9aefbc;
+	--color-success-300: #6ae79c;
+	--color-success-400: #3ee07f;
+	--color-success-500: #21cc66;
+	--color-success-600: #1db45a;
+	--color-success-700: #1aa251;
+	--color-success-800: #178d46;
+	--color-success-900: #0f5c2e;
+
+	--color-warning-50: #fff9eb;
+	--color-warning-100: #fff3c1;
+	--color-warning-200: #ffeca1;
+	--color-warning-300: #ffdc48;
+	--color-warning-400: #f4c000;
+	--color-warning-500: #dea500;
+	--color-warning-600: #d18e00;
+	--color-warning-700: #ab6800;
+	--color-warning-800: #8c5800;
+	--color-warning-900: #5a3600;
+}
